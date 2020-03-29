@@ -1,0 +1,4270 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Consolas-Bold;\f1\fnil\fcharset0 Consolas;\f2\fnil\fcharset0 Consolas-BoldItalic;
+\f3\fnil\fcharset0 Calibri;\f4\fnil\fcharset0 Consolas-Italic;\f5\fnil\fcharset0 Cambria-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red100\green100\blue100;
+\red0\green0\blue192;\red42\green0\blue255;\red63\green127\blue95;\red79\green129\blue189;\red143\green143\blue143;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c39216\c39216\c39216;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c30980\c50588\c74118;\csgenericrgb\c56078\c56078\c56078;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15080\viewh13160\viewkind0
+\deftab708
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ MyThread \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread() \{\
+			\cf4 \kerning1\expnd1\expndtw5
+@Override\cf0 \kerning1\expnd1\expndtw5
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ run() \{\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"thread started"\cf0 \kerning1\expnd1\expndtw5
+);\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 10; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+					System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"thread working : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+				\}\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"thread stopped"\cf0 \kerning1\expnd1\expndtw5
+);\
+			\}\
+		\};\
+\
+		\cf3 \kerning1\expnd1\expndtw5
+t\cf0 \kerning1\expnd1\expndtw5
+.start();\
+	\}\
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ MyRunnable \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"thread started"\cf0 \kerning1\expnd1\expndtw5
+);\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 10; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"thread working : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+			\}\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"thread stopped"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\};\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+t\cf0 \kerning1\expnd1\expndtw5
+.start();\
+\
+	\}\
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+
+\f3\fs22 \cf0 \kerning1\expnd1\expndtw5
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\ul \ulc0 \
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+\ulnone public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ StackMain \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+		
+\f4\i \kerning1\expnd1\expndtw5
+method1
+\f1\i0 \kerning1\expnd1\expndtw5
+();\
+		System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+() + \cf6 \kerning1\expnd1\expndtw5
+" : End main"\cf0 \kerning1\expnd1\expndtw5
+);\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ method1() \{\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+() + \cf6 \kerning1\expnd1\expndtw5
+" : task running"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\};\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Sonic"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+t\cf0 \kerning1\expnd1\expndtw5
+.run();\
+		\cf3 \kerning1\expnd1\expndtw5
+t\cf0 \kerning1\expnd1\expndtw5
+.start();\
+	\}\
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\ul \
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\ulnone \
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ThreadPriority \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" thread started"\cf0 \kerning1\expnd1\expndtw5
+);\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 5; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" thread working : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+			\}\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" thread stopped"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\};\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"t1"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+.setPriority(2);\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"t2"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+.setPriority(Thread.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_PRIORITY
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t3\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"t3"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+t3\cf0 \kerning1\expnd1\expndtw5
+.setPriority(Thread.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MIN_PRIORITY
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t4\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"t4"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+t4\cf0 \kerning1\expnd1\expndtw5
+.setPriority(Thread.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+NORM_PRIORITY
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		\cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+.start();\
+		\cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+.start();\
+		\cf3 \kerning1\expnd1\expndtw5
+t3\cf0 \kerning1\expnd1\expndtw5
+.start();\
+		\cf3 \kerning1\expnd1\expndtw5
+t4\cf0 \kerning1\expnd1\expndtw5
+.start();\
+	\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ AccountDemo 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+implements
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Runnable \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Account \cf5 \kerning1\expnd1\expndtw5
+account\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Account();\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		AccountDemo \cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ AccountDemo();\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Alice"\cf0 \kerning1\expnd1\expndtw5
+);\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Bob"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+.start();\
+		\cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+.start();\
+	\}\
+\
+	\cf4 \kerning1\expnd1\expndtw5
+@Override\cf0 \kerning1\expnd1\expndtw5
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ run() \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 5; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+			makeWithdrawal(20);\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+if
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+account\cf0 \kerning1\expnd1\expndtw5
+.getBalance() < 0) \{\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"account is overdrawn!"\cf0 \kerning1\expnd1\expndtw5
+);\
+			\}\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ makeWithdrawal(
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+if
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+account\cf0 \kerning1\expnd1\expndtw5
+.getBalance() >= 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" is going to withdraw"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+				Thread.
+\f4\i \kerning1\expnd1\expndtw5
+sleep
+\f1\i0 \kerning1\expnd1\expndtw5
+(500);\
+			\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+			\}\
+\
+			\cf5 \kerning1\expnd1\expndtw5
+account\cf0 \kerning1\expnd1\expndtw5
+.withdraw(
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+);\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" completes the withdrawal"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+else
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\
+					\cf6 \kerning1\expnd1\expndtw5
+"Not enough in account for "\cf0 \kerning1\expnd1\expndtw5
+ + Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" to withdraw "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+account\cf0 \kerning1\expnd1\expndtw5
+.getBalance());\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Account \{\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf5 \kerning1\expnd1\expndtw5
+balance\cf0 \kerning1\expnd1\expndtw5
+ = 100;\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ getBalance() \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+return
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf5 \kerning1\expnd1\expndtw5
+balance\cf0 \kerning1\expnd1\expndtw5
+;\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ withdraw(
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+this
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+.\cf5 \kerning1\expnd1\expndtw5
+balance\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+this
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+.\cf5 \kerning1\expnd1\expndtw5
+balance\cf0 \kerning1\expnd1\expndtw5
+ - 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+;\
+		\}\
+	\}\
+\
+\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+
+\f3\fs22 \cf0 \kerning1\expnd1\expndtw5
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ makeWithdrawal(
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+if
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+account\cf0 \kerning1\expnd1\expndtw5
+.getBalance() >= 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+		System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" is going to withdraw"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			Thread.
+\f4\i \kerning1\expnd1\expndtw5
+sleep
+\f1\i0 \kerning1\expnd1\expndtw5
+(500);\
+		\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+		\}\
+\
+		\cf5 \kerning1\expnd1\expndtw5
+account\cf0 \kerning1\expnd1\expndtw5
+.withdraw(
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+);\
+		System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" completes the withdrawal"\cf0 \kerning1\expnd1\expndtw5
+);\
+	\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+else
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+		System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\
+				\cf6 \kerning1\expnd1\expndtw5
+"Not enough in account for "\cf0 \kerning1\expnd1\expndtw5
+ + Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" to withdraw "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+account\cf0 \kerning1\expnd1\expndtw5
+.getBalance());\
+	\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction() \{\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+this
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// continue do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction() \{\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+this
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// do something by one thread\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+
+\f3\fs22 \cf0 \kerning1\expnd1\expndtw5
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+private final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object \cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object();\
+\
+
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction() \{\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+) \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// continue do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+private static final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object \cf5 \kerning1\expnd1\expndtw5
+LOCK\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object();\
+\
+
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction() \{\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+LOCK\cf0 \kerning1\expnd1\expndtw5
+) \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+\pard\pardeftab708\ri-52\partightenfactor0
+\cf7 \kerning1\expnd1\expndtw5
+	// continue do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+
+\f3\fs22 \cf0 \kerning1\expnd1\expndtw5
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sb200\partightenfactor0
+
+\f5\b\fs26 \cf8 \kerning1\expnd1\expndtw5
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\fs20 \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction() \{\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (MyClass.
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ SynchronizationSummary \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object \cf5 \kerning1\expnd1\expndtw5
+lockA\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object();\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object \cf5 \kerning1\expnd1\expndtw5
+lockB\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object();\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+LOCK_C
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object();\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction1() \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lockA\cf0 \kerning1\expnd1\expndtw5
+) \{\
+			\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction2() \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lockB\cf0 \kerning1\expnd1\expndtw5
+) \{\
+			\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction3() \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction4() \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction5() \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+LOCK_C
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+			\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+		\}\
+	\}\
+\
+
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+	public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction6() \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (SynchronizationSummary.
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+			\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+		\}\
+	\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ NonAtomicOperation \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ List<String> \cf5 \kerning1\expnd1\expndtw5
+names\cf0 \kerning1\expnd1\expndtw5
+ = Collections.
+\f4\i \kerning1\expnd1\expndtw5
+synchronizedList
+\f1\i0 \kerning1\expnd1\expndtw5
+(
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ LinkedList<String>());\
+	\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ add(String 
+\f0\b \kerning1\expnd1\expndtw5
+name
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+		\cf5 \kerning1\expnd1\expndtw5
+names\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+add\cf0 \kerning1\expnd1\expndtw5
+(
+\f0\b \kerning1\expnd1\expndtw5
+name
+\f1\b0 \kerning1\expnd1\expndtw5
+);\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ String removeFirst() \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+if
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (!\cf5 \kerning1\expnd1\expndtw5
+names\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+isEmpty\cf0 \kerning1\expnd1\expndtw5
+()) \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+return
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf5 \kerning1\expnd1\expndtw5
+names\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+remove\cf0 \kerning1\expnd1\expndtw5
+(0);\
+		\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+else
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+return
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+null
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+;\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ NonAtomicOperation \cf3 \kerning1\expnd1\expndtw5
+n1\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ NonAtomicOperation();\
+		\cf3 \kerning1\expnd1\expndtw5
+n1\cf0 \kerning1\expnd1\expndtw5
+.add(\cf6 \kerning1\expnd1\expndtw5
+"Foobar"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+				Thread.
+\f4\i \kerning1\expnd1\expndtw5
+sleep
+\f1\i0 \kerning1\expnd1\expndtw5
+(500);\
+			\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+				\cf7 \kerning1\expnd1\expndtw5
+// nothing to do\cf0 \kerning1\expnd1\expndtw5
+\
+			\}\
+			String \cf3 \kerning1\expnd1\expndtw5
+name\cf0 \kerning1\expnd1\expndtw5
+ = \cf3 \kerning1\expnd1\expndtw5
+n1\cf0 \kerning1\expnd1\expndtw5
+.removeFirst();\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf3 \kerning1\expnd1\expndtw5
+name\cf0 \kerning1\expnd1\expndtw5
+);\
+		\};\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Thread-1"\cf0 \kerning1\expnd1\expndtw5
+);\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Thread-2"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+.start();\
+		\cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+.start();\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+
+\f3\fs22 \cf0 \kerning1\expnd1\expndtw5
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ProducerConsumerThreadSafe \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 20;\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+BUFFER_SIZE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 5;\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Queue<Integer> \cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ LinkedList<>();\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object \cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object();\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		ProducerConsumerThreadSafe \cf3 \kerning1\expnd1\expndtw5
+main\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ProducerConsumerThreadSafe();\
+		\cf3 \kerning1\expnd1\expndtw5
+main\cf0 \kerning1\expnd1\expndtw5
+.runDemo();\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ runDemo() \{\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+producer\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+) \{\
+					
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+size\cf0 \kerning1\expnd1\expndtw5
+() == 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+BUFFER_SIZE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" : Queue is full. Waiting for produce ..."\cf0 \kerning1\expnd1\expndtw5
+);\
+						
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+							\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.wait();\
+						\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+						\}\
+					\}\
+				\}\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+) \{\
+					System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" put : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+					\cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+offer\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.notify();\
+				\}\
+\
+			\}\
+		\};\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+consumer\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+ = 0;\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+ < 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+) \{\
+					
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+isEmpty\cf0 \kerning1\expnd1\expndtw5
+()) \{\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" : Queue is empty. Waiting for data to consume ..."\cf0 \kerning1\expnd1\expndtw5
+);\
+						
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+							\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.wait();\
+						\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+						\}\
+					\}\
+				\}\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+) \{\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" get : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+poll\cf0 \kerning1\expnd1\expndtw5
+());\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.notify();\
+					\cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+++;\
+				\}\
+\
+			\}\
+		\};\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+threadProducer\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+producer\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Producer"\cf0 \kerning1\expnd1\expndtw5
+);\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+threadConsumer\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+consumer\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Consumer"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		\cf3 \kerning1\expnd1\expndtw5
+threadProducer\cf0 \kerning1\expnd1\expndtw5
+.start();\
+		\cf3 \kerning1\expnd1\expndtw5
+threadConsumer\cf0 \kerning1\expnd1\expndtw5
+.start();\
+	\}\
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+private final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Lock \cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ReentrantLock();\
+\
+
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction() \{\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+		\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.lock();\
+		\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+	\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+		l\cf5 \kerning1\expnd1\expndtw5
+ock\cf0 \kerning1\expnd1\expndtw5
+.unlock();\
+	\}\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// continue do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+private final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Lock \cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ReentrantLock();\
+\
+
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction() \{\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\
+	if (\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.tryLock()) \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+		\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.unlock();\
+		\}\
+	\} else \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// do something else by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+	\cf7 \kerning1\expnd1\expndtw5
+// continue do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+private final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Lock \cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ReentrantLock();\
+\
+
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ doAction() \{\
+\
+	\cf7 \kerning1\expnd1\expndtw5
+// do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\
+	if (\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.tryLock(2, TimeUnit.SECONDS)) \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			\cf7 \kerning1\expnd1\expndtw5
+// critical session executed by one thread only\cf0 \kerning1\expnd1\expndtw5
+\
+		\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.unlock();\
+		\}\
+	\} else \{\
+		\cf7 \kerning1\expnd1\expndtw5
+// do something else by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+	\}\
+	\cf7 \kerning1\expnd1\expndtw5
+// continue do something by multiple threads\cf0 \kerning1\expnd1\expndtw5
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ProducerConsumerThreadSafeJava5 \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 20;\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+BUFFER_SIZE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 5;\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Queue<Integer> \cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ LinkedList<>();\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Lock \cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ReentrantLock();\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		ProducerConsumerThreadSafeJava5 \cf3 \kerning1\expnd1\expndtw5
+main\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ProducerConsumerThreadSafeJava5();\
+		\cf3 \kerning1\expnd1\expndtw5
+main\cf0 \kerning1\expnd1\expndtw5
+.runDemo();\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ runDemo() \{\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Condition \cf3 \kerning1\expnd1\expndtw5
+conditionBufferEmpty\cf0 \kerning1\expnd1\expndtw5
+ = \cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+newCondition\cf0 \kerning1\expnd1\expndtw5
+();\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Condition \cf3 \kerning1\expnd1\expndtw5
+conditionBufferFull\cf0 \kerning1\expnd1\expndtw5
+ = \cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+newCondition\cf0 \kerning1\expnd1\expndtw5
+();\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+producer\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+\
+			Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().setName(\cf6 \kerning1\expnd1\expndtw5
+"Producer"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+();\
+					
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+size\cf0 \kerning1\expnd1\expndtw5
+() == 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+BUFFER_SIZE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" : Queue is full. Waiting for produce ..."\cf0 \kerning1\expnd1\expndtw5
+);\
+						
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+							\cf3 \kerning1\expnd1\expndtw5
+conditionBufferFull\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+await\cf0 \kerning1\expnd1\expndtw5
+();\
+						\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+						\}\
+					\}\
+				\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+unlock\cf0 \kerning1\expnd1\expndtw5
+();\
+				\}\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+();\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" put : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+					\cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+offer\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+					\cf3 \kerning1\expnd1\expndtw5
+conditionBufferEmpty\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+signal\cf0 \kerning1\expnd1\expndtw5
+();\
+				\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+unlock\cf0 \kerning1\expnd1\expndtw5
+();\
+				\}\
+\
+			\}\
+		\};\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+consumer\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+ = 0;\
+			Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().setName(\cf6 \kerning1\expnd1\expndtw5
+"Consumer"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+ < 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+();\
+					
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+isEmpty\cf0 \kerning1\expnd1\expndtw5
+()) \{\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" : Queue is empty. Waiting for data to consume ..."\cf0 \kerning1\expnd1\expndtw5
+);\
+						
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+							\cf3 \kerning1\expnd1\expndtw5
+conditionBufferEmpty\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+await\cf0 \kerning1\expnd1\expndtw5
+();\
+						\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+						\}\
+					\}\
+				\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+unlock\cf0 \kerning1\expnd1\expndtw5
+();\
+				\}\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+();\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" get : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+poll\cf0 \kerning1\expnd1\expndtw5
+());\
+					\cf3 \kerning1\expnd1\expndtw5
+conditionBufferFull\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+signal\cf0 \kerning1\expnd1\expndtw5
+();\
+					\cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+++;\
+				\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\cf5 \kerning1\expnd1\expndtw5
+lock\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+unlock\cf0 \kerning1\expnd1\expndtw5
+();\
+				\}\
+\
+			\}\
+		\};\
+\
+		ExecutorService \cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+ = Executors.
+\f4\i \kerning1\expnd1\expndtw5
+newCachedThreadPool
+\f1\i0 \kerning1\expnd1\expndtw5
+();\
+		\cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+execute\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+producer\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+execute\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+consumer\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		\cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+shutdown\cf0 \kerning1\expnd1\expndtw5
+();\
+	\}\
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ProducerConsumerUsingBlockingQueue \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 20;\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+BUFFER_SIZE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 5;\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ BlockingQueue<Integer> \cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ LinkedBlockingQueue<>(
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+BUFFER_SIZE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+);\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		ProducerConsumerUsingBlockingQueue \cf3 \kerning1\expnd1\expndtw5
+main\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ProducerConsumerUsingBlockingQueue();\
+		\cf3 \kerning1\expnd1\expndtw5
+main\cf0 \kerning1\expnd1\expndtw5
+.runDemo();\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ runDemo() \{\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+producer\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+\
+			Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().setName(\cf6 \kerning1\expnd1\expndtw5
+"Producer"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" put : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+					\cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+put\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+				\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+					\cf7 \kerning1\expnd1\expndtw5
+// nothing to do\cf0 \kerning1\expnd1\expndtw5
+\
+				\}\
+			\}\
+\
+		\};\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+consumer\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+ = 0;\
+			Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().setName(\cf6 \kerning1\expnd1\expndtw5
+"Consumer"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+ < 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_ELEMENTS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+	System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" get : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+take\cf0 \kerning1\expnd1\expndtw5
+());\
+					\cf3 \kerning1\expnd1\expndtw5
+counter\cf0 \kerning1\expnd1\expndtw5
+++;\
+				\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+					\cf7 \kerning1\expnd1\expndtw5
+// nothing to do\cf0 \kerning1\expnd1\expndtw5
+\
+				\}\
+			\}\
+		\};\
+\
+		ExecutorService \cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+ = Executors.
+\f4\i \kerning1\expnd1\expndtw5
+newCachedThreadPool
+\f1\i0 \kerning1\expnd1\expndtw5
+();\
+		\cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+execute\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+producer\cf0 \kerning1\expnd1\expndtw5
+);\
+		\cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+execute\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+consumer\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		\cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+shutdown\cf0 \kerning1\expnd1\expndtw5
+();\
+	\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ DeadlockMain \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+COMPUTE_HARD
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 1000;\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Runner \cf3 \kerning1\expnd1\expndtw5
+runner\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Runner();\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+r1\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+				\cf3 \kerning1\expnd1\expndtw5
+runner\cf0 \kerning1\expnd1\expndtw5
+.firstThread();\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"Thread 1 is finished"\cf0 \kerning1\expnd1\expndtw5
+);\
+			\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+			\}\
+		\};\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+r2\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+				\cf3 \kerning1\expnd1\expndtw5
+runner\cf0 \kerning1\expnd1\expndtw5
+.secondThread();\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"Thread 2 is finished"\cf0 \kerning1\expnd1\expndtw5
+);\
+			\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+			\}\
+		\};\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r1\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Thread-1"\cf0 \kerning1\expnd1\expndtw5
+);\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(\cf3 \kerning1\expnd1\expndtw5
+r2\cf0 \kerning1\expnd1\expndtw5
+, \cf6 \kerning1\expnd1\expndtw5
+"Thread-2"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		\cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+.start();\
+		\cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+.start();\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			\cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+.join();\
+			\cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+.join();\
+			\cf3 \kerning1\expnd1\expndtw5
+runner\cf0 \kerning1\expnd1\expndtw5
+.finished();\
+		\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Runner \{\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Account \cf5 \kerning1\expnd1\expndtw5
+account1\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Account();\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Account \cf5 \kerning1\expnd1\expndtw5
+account2\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Account();\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object \cf5 \kerning1\expnd1\expndtw5
+lock1\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object();\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object \cf5 \kerning1\expnd1\expndtw5
+lock2\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Object();\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ firstThread() 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+throws
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ InterruptedException \{\
+\
+			Random \cf3 \kerning1\expnd1\expndtw5
+random\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Random();\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+COMPUTE_HARD
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock1)\cf0 \kerning1\expnd1\expndtw5
+ \{\
+					
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock2\cf0 \kerning1\expnd1\expndtw5
+) \{\
+						
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+							\cf7 \kerning1\expnd1\expndtw5
+// transfer from 1 to 2\cf0 \kerning1\expnd1\expndtw5
+\
+							
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+amount\cf0 \kerning1\expnd1\expndtw5
+ = \cf3 \kerning1\expnd1\expndtw5
+random\cf0 \kerning1\expnd1\expndtw5
+.nextInt(100);\
+							Account.
+\f4\i \kerning1\expnd1\expndtw5
+transfer
+\f1\i0 \kerning1\expnd1\expndtw5
+(\cf5 \kerning1\expnd1\expndtw5
+account1\cf0 \kerning1\expnd1\expndtw5
+, \cf5 \kerning1\expnd1\expndtw5
+account2\cf0 \kerning1\expnd1\expndtw5
+, \cf3 \kerning1\expnd1\expndtw5
+amount\cf0 \kerning1\expnd1\expndtw5
+);\
+							System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName()\
+									+ \cf6 \kerning1\expnd1\expndtw5
+" completes the transaction from account1 to account2 of "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+amount\cf0 \kerning1\expnd1\expndtw5
+ + \cf6 \kerning1\expnd1\expndtw5
+" EUR"\cf0 \kerning1\expnd1\expndtw5
+);\
+							TimeUnit.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MILLISECONDS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.sleep(100);\
+						\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+						\}\
+					\}\
+				\}\
+			\}\
+\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ secondThread() 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+throws
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ InterruptedException \{\
+\
+			Random \cf3 \kerning1\expnd1\expndtw5
+random\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Random();\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+COMPUTE_HARD
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+				transferCredits(\cf3 \kerning1\expnd1\expndtw5
+random\cf0 \kerning1\expnd1\expndtw5
+);\
+			\}\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ transferCredits(Random 
+\f0\b \kerning1\expnd1\expndtw5
+random
+\f1\b0 \kerning1\expnd1\expndtw5
+) 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+throws
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ InterruptedException \{\
+			\cf7 \kerning1\expnd1\expndtw5
+// locks must be held and released in same order that in others threads\cf0 \kerning1\expnd1\expndtw5
+\
+			\cf7 \kerning1\expnd1\expndtw5
+// otherwise deadlock happens\cf0 \kerning1\expnd1\expndtw5
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock2\cf0 \kerning1\expnd1\expndtw5
+) \{\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+lock1)\cf0 \kerning1\expnd1\expndtw5
+ \{\
+					
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+						\cf7 \kerning1\expnd1\expndtw5
+// transfer from 2 to 1\cf0 \kerning1\expnd1\expndtw5
+\
+						
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+amount\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \kerning1\expnd1\expndtw5
+random
+\f1\b0 \kerning1\expnd1\expndtw5
+.nextInt(100);\
+						Account.
+\f4\i \kerning1\expnd1\expndtw5
+transfer
+\f1\i0 \kerning1\expnd1\expndtw5
+(\cf5 \kerning1\expnd1\expndtw5
+account2\cf0 \kerning1\expnd1\expndtw5
+, \cf5 \kerning1\expnd1\expndtw5
+account1\cf0 \kerning1\expnd1\expndtw5
+, \cf3 \kerning1\expnd1\expndtw5
+amount\cf0 \kerning1\expnd1\expndtw5
+);\
+						System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName()\
+								+ \cf6 \kerning1\expnd1\expndtw5
+" completes the transaction from account2 to account1 of "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+amount\cf0 \kerning1\expnd1\expndtw5
+ + \cf6 \kerning1\expnd1\expndtw5
+" EUR"\cf0 \kerning1\expnd1\expndtw5
+);\
+						TimeUnit.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MILLISECONDS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.sleep(100);\
+					\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+finally
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					\}\
+				\}\
+			\}\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ finished() \{\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"Account 1 balance : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+account1\cf0 \kerning1\expnd1\expndtw5
+.getBalance());\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"Account 2 balance : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+account2\cf0 \kerning1\expnd1\expndtw5
+.getBalance());\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"Total of accounts balances : "\cf0 \kerning1\expnd1\expndtw5
+ + (\cf5 \kerning1\expnd1\expndtw5
+account1\cf0 \kerning1\expnd1\expndtw5
+.getBalance() + \cf5 \kerning1\expnd1\expndtw5
+account2\cf0 \kerning1\expnd1\expndtw5
+.getBalance()));\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Account \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf5 \kerning1\expnd1\expndtw5
+balance\cf0 \kerning1\expnd1\expndtw5
+ = 10000;\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ deposit(
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+			\cf5 \kerning1\expnd1\expndtw5
+balance\cf0 \kerning1\expnd1\expndtw5
+ += 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+;\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ withDraw(
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+			\cf5 \kerning1\expnd1\expndtw5
+balance\cf0 \kerning1\expnd1\expndtw5
+ -= 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+;\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ getBalance() \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+return
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf5 \kerning1\expnd1\expndtw5
+balance\cf0 \kerning1\expnd1\expndtw5
+;\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ transfer(Account 
+\f0\b \kerning1\expnd1\expndtw5
+acc1
+\f1\b0 \kerning1\expnd1\expndtw5
+, Account 
+\f0\b \kerning1\expnd1\expndtw5
+acc2
+\f1\b0 \kerning1\expnd1\expndtw5
+, 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+			
+\f0\b \kerning1\expnd1\expndtw5
+acc1
+\f1\b0 \kerning1\expnd1\expndtw5
+.withDraw(
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+);\
+			
+\f0\b \kerning1\expnd1\expndtw5
+acc2
+\f1\b0 \kerning1\expnd1\expndtw5
+.deposit(
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+);\
+		\}\
+	\}\
+\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ LivelockDiskSpaceMain \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		DiskManager \cf3 \kerning1\expnd1\expndtw5
+diskManager\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ DiskManager();\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(() -> \{\
+\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+true
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+if
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf3 \kerning1\expnd1\expndtw5
+diskManager\cf0 \kerning1\expnd1\expndtw5
+.isTooLow()) \{\
+					\cf3 \kerning1\expnd1\expndtw5
+diskManager\cf0 \kerning1\expnd1\expndtw5
+.reclaimSpace();\
+					
+\f4\i \kerning1\expnd1\expndtw5
+sleep
+\f1\i0 \kerning1\expnd1\expndtw5
+(500);\
+				\}\
+				
+\f4\i \kerning1\expnd1\expndtw5
+sleep
+\f1\i0 \kerning1\expnd1\expndtw5
+(100);\
+			\}\
+		\}, \cf6 \kerning1\expnd1\expndtw5
+"diskCleanerTask-t1"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		Thread \cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Thread(() -> \{\
+\
+			String \cf3 \kerning1\expnd1\expndtw5
+name\cf0 \kerning1\expnd1\expndtw5
+ = Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName();\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+applicationSize\cf0 \kerning1\expnd1\expndtw5
+ = 60;\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+packSize\cf0 \kerning1\expnd1\expndtw5
+ = 10;\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+maxPart\cf0 \kerning1\expnd1\expndtw5
+ = \cf3 \kerning1\expnd1\expndtw5
+applicationSize\cf0 \kerning1\expnd1\expndtw5
+ / \cf3 \kerning1\expnd1\expndtw5
+packSize\cf0 \kerning1\expnd1\expndtw5
+;\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+progressBar\cf0 \kerning1\expnd1\expndtw5
+ = 0;\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+currentSize\cf0 \kerning1\expnd1\expndtw5
+ = 0;\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf3 \kerning1\expnd1\expndtw5
+currentSize\cf0 \kerning1\expnd1\expndtw5
+ < \cf3 \kerning1\expnd1\expndtw5
+applicationSize\cf0 \kerning1\expnd1\expndtw5
+) \{\
+\
+				
+\f4\i \kerning1\expnd1\expndtw5
+sleep
+\f1\i0 \kerning1\expnd1\expndtw5
+(500);\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+amountDone\cf0 \kerning1\expnd1\expndtw5
+ = \cf3 \kerning1\expnd1\expndtw5
+diskManager\cf0 \kerning1\expnd1\expndtw5
+.useSpace(\cf3 \kerning1\expnd1\expndtw5
+packSize\cf0 \kerning1\expnd1\expndtw5
+);\
+					\cf3 \kerning1\expnd1\expndtw5
+currentSize\cf0 \kerning1\expnd1\expndtw5
+ = \cf3 \kerning1\expnd1\expndtw5
+currentSize\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+amountDone\cf0 \kerning1\expnd1\expndtw5
+;\
+					\cf3 \kerning1\expnd1\expndtw5
+progressBar\cf0 \kerning1\expnd1\expndtw5
+++;\
+					System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf3 \kerning1\expnd1\expndtw5
+name\cf0 \kerning1\expnd1\expndtw5
+ + \cf6 \kerning1\expnd1\expndtw5
+" progressing "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+progressBar\cf0 \kerning1\expnd1\expndtw5
+ + \cf6 \kerning1\expnd1\expndtw5
+"/"\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+maxPart\cf0 \kerning1\expnd1\expndtw5
+);\
+				\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (RuntimeException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+					System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf3 \kerning1\expnd1\expndtw5
+name\cf0 \kerning1\expnd1\expndtw5
+ + \cf6 \kerning1\expnd1\expndtw5
+" insufficient space. Download aborted. Retry in a few moments"\cf0 \kerning1\expnd1\expndtw5
+);\
+					\cf3 \kerning1\expnd1\expndtw5
+progressBar\cf0 \kerning1\expnd1\expndtw5
+ = 0;\
+					\cf3 \kerning1\expnd1\expndtw5
+currentSize\cf0 \kerning1\expnd1\expndtw5
+ = 0;\
+					
+\f4\i \kerning1\expnd1\expndtw5
+sleep
+\f1\i0 \kerning1\expnd1\expndtw5
+(500);\
+				\}\
+			\}\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"End download"\cf0 \kerning1\expnd1\expndtw5
+);\
+		\}, \cf6 \kerning1\expnd1\expndtw5
+"downloader-t2"\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		\cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+.start();\
+		\cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+.start();\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			\cf3 \kerning1\expnd1\expndtw5
+t1\cf0 \kerning1\expnd1\expndtw5
+.join();\
+			\cf3 \kerning1\expnd1\expndtw5
+t2\cf0 \kerning1\expnd1\expndtw5
+.join();\
+		\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+			\cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+.printStackTrace();\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ sleep(
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+long
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+timeout
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+try
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+			TimeUnit.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MILLISECONDS
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.sleep(
+\f0\b \kerning1\expnd1\expndtw5
+timeout
+\f1\b0 \kerning1\expnd1\expndtw5
+);\
+		\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+catch
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (InterruptedException \cf3 \kerning1\expnd1\expndtw5
+e\cf0 \kerning1\expnd1\expndtw5
+) \{\
+		\}\
+	\}\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ DiskManager \{\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_THRESHOLD
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 80;\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_SPACE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 100;\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+final
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+AMOUNT_TO_FREE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+ = 4;\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+ = 50;\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ reclaimSpace() \{\
+			\cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+ = \cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+ - 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+AMOUNT_TO_FREE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+;\
+			System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" space after clean : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+);\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+synchronized
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ useSpace(
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+if
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (isTooLow()) \{\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" no more available space"\cf0 \kerning1\expnd1\expndtw5
+);\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+throw
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ RuntimeException(\cf6 \kerning1\expnd1\expndtw5
+"Space disk almost full"\cf0 \kerning1\expnd1\expndtw5
+);\
+			\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+else
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+if
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+ + 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+ <= 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_SPACE
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+				\cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+ = \cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+ + 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+;\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(Thread.
+\f4\i \kerning1\expnd1\expndtw5
+currentThread
+\f1\i0 \kerning1\expnd1\expndtw5
+().getName() + \cf6 \kerning1\expnd1\expndtw5
+" remaining space : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+);\
+			\}\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+return
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \kerning1\expnd1\expndtw5
+amount
+\f1\b0 \kerning1\expnd1\expndtw5
+;\
+		\}\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+private
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+boolean
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ isTooLow() \{\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+return
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf5 \kerning1\expnd1\expndtw5
+usedSpace\cf0 \kerning1\expnd1\expndtw5
+ >= 
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+MAX_THRESHOLD
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+;\
+		\}\
+	\}\
+\pard\pardeftab708\ri-52\sl276\slmult1\sa200\partightenfactor0
+\cf0 \kerning1\expnd1\expndtw5
+\}
+\f3\fs22 \kerning1\expnd1\expndtw5
+\
+\
+\
+\
+\pard\pardeftab708\ri-52\partightenfactor0
+
+\f0\b\fs20 \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+class
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ LivelockQueueWithConsumerMain \{\
+\
+	
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+public
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+static
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+void
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ main(String[] 
+\f0\b \kerning1\expnd1\expndtw5
+args
+\f1\b0 \kerning1\expnd1\expndtw5
+) \{\
+\
+		Deque<Integer> \cf3 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ LinkedList<>();\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+maxElements\cf0 \kerning1\expnd1\expndtw5
+ = 5;\
+\
+		
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+for
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ = 0; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+ < \cf3 \kerning1\expnd1\expndtw5
+maxElements\cf0 \kerning1\expnd1\expndtw5
+; \cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+++) \{\
+			\cf3 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+add\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+i\cf0 \kerning1\expnd1\expndtw5
+);\
+		\}\
+\
+		Runnable \cf3 \kerning1\expnd1\expndtw5
+consumer\cf0 \kerning1\expnd1\expndtw5
+ = () -> \{\
+			Integer \cf3 \kerning1\expnd1\expndtw5
+id\cf0 \kerning1\expnd1\expndtw5
+ = 0;\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+int
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \cf3 \kerning1\expnd1\expndtw5
+typeMessage\cf0 \kerning1\expnd1\expndtw5
+ = 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+new
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ Random().nextInt(\cf3 \kerning1\expnd1\expndtw5
+maxElements\cf0 \kerning1\expnd1\expndtw5
+);\
+			
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+while
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ ((\cf3 \kerning1\expnd1\expndtw5
+id\cf0 \kerning1\expnd1\expndtw5
+ = \cf3 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+poll\cf0 \kerning1\expnd1\expndtw5
+()) != 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+null
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+) \{\
+				System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"Processing value : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+id\cf0 \kerning1\expnd1\expndtw5
+ + \cf6 \kerning1\expnd1\expndtw5
+" ..."\cf0 \kerning1\expnd1\expndtw5
+);\
+				
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+if
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ (\cf3 \kerning1\expnd1\expndtw5
+id\cf0 \kerning1\expnd1\expndtw5
+ == \cf3 \kerning1\expnd1\expndtw5
+typeMessage\cf0 \kerning1\expnd1\expndtw5
+) \{\
+					System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+\
+							.println(\cf6 \kerning1\expnd1\expndtw5
+"Simulate error for value : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+id\cf0 \kerning1\expnd1\expndtw5
+ + \cf6 \kerning1\expnd1\expndtw5
+". Rollback transaction and putting back to the queue"\cf0 \kerning1\expnd1\expndtw5
+);\
+					\cf3 \kerning1\expnd1\expndtw5
+queue\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+addFirst\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+id\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+				\} 
+\f0\b \cf2 \kerning1\expnd1\expndtw5
+else
+\f1\b0 \cf0 \kerning1\expnd1\expndtw5
+ \{\
+					System.
+\f2\i\b \cf5 \kerning1\expnd1\expndtw5
+out
+\f1\i0\b0 \cf0 \kerning1\expnd1\expndtw5
+.println(\cf6 \kerning1\expnd1\expndtw5
+"Processing value : "\cf0 \kerning1\expnd1\expndtw5
+ + \cf3 \kerning1\expnd1\expndtw5
+id\cf0 \kerning1\expnd1\expndtw5
+ + \cf6 \kerning1\expnd1\expndtw5
+" complete"\cf0 \kerning1\expnd1\expndtw5
+);\
+				\}\
+			\}\
+		\};\
+\
+		ExecutorService \cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+ = Executors.
+\f4\i \kerning1\expnd1\expndtw5
+newCachedThreadPool
+\f1\i0 \kerning1\expnd1\expndtw5
+();\
+		\cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+execute\cf0 \kerning1\expnd1\expndtw5
+(\cf3 \kerning1\expnd1\expndtw5
+consumer\cf0 \kerning1\expnd1\expndtw5
+);\
+\
+		\cf3 \kerning1\expnd1\expndtw5
+executor\cf0 \kerning1\expnd1\expndtw5
+.\cf9 \kerning1\expnd1\expndtw5
+shutdown\cf0 \kerning1\expnd1\expndtw5
+();\
+	\}\
+\}}
